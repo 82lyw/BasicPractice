@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a页面</title>
+    <script type="text/javascript" src="js/jquery/jquery-1.12.1.min.js"></script>
+    <script type="text/javascript">
+        function to(){
+            var getVal ="valueTest";
+            window.location.href="b.html?valus="+getVal;
+        }
+        function toMore(){
+            var a="这是第一个";
+            var b="这是第二个";
+            window.location.herf="b.html?value="+a&b;
+        }
+    </script>
+</head>
+<body>
+<button onclick="to()">传值</button>
+<button onclick="toMore()">传多值</button>
+</body>
+</html>

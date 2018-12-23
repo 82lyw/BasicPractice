@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D-Title</title>
+</head>
+<body>
+<div>这是B页面</div>
+<a onclick="window.history.back(-1)">回到上一个页面</a>
+
+<script type="text/javascript">
+    function getParams(key) {
+        var reg = new RegExp("(^|&)" + key + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) {
+            return unescape(r[2]);
+        }
+        return null;
+    };
+    console.log("参数param1:"+getParams("param1"));//输出aa
+    console.log("参数param2:"+getParams("param2"));//输出bb
+
+</script>
+</body>
+</html>

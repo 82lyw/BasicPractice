@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>F-Title</title>
+</head>
+<body>
+<label id="label1">dt</label>
+<button onclick="to()"></button>
+<script type="text/javascript">
+    str=localStorage.getItem('value') + " " + localStorage.getItem('text')
+    console.log(str)
+    document.getElementById("label1").innerHTML = str
+
+    /*
+    // 存储时，要先将对象json化字符串
+    localStorage.setItem("test",JSON.stringify(result));
+
+    localStorage.name = 'jack';
+    localStorage.getItem('name'); // jack
+    localStorage.setItem('name','tom'); // 重新覆盖，变为了tom了
+    localStorage.setItem('age','18');
+    localStorage.getItem('name'); // tom
+    localStorage.getItem('age');  // 18
+    localStorage.removeItem('name');
+    localStorage.getItem('name'); // 已经被清除了null
+    localStorage.getItem('age');  // 18
+    localStorage.clear();         // 清除了所有
+    localStorage.getItem('age'); // null
+    */
+
+    </script>
+</body>
+</html>
